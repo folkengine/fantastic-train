@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cmake -S . -B build
+cmake -S . -B build -DENABLE_COVERAGE=On
 cmake --build build --clean-first
 cd build || exit
 make test
