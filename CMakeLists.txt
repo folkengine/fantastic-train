@@ -32,3 +32,7 @@ enable_testing()
 include_directories(${COMMON_INCLUDES})
 add_subdirectory(src)
 add_subdirectory(test)
+
+set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/externals/cmake" ${CMAKE_MODULE_PATH})
+# enable code coverage
+find_package(codecov)
